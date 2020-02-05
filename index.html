@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./src/header.js">
+        //analita
+        //googletag
+    </script>
+
+    <script async type="module" src="./src/header.async.js">
+        //OJO: pide todas sus depenedencias en paraleo y bloquean el renderizado para evaluarse :: WARNING!!!
+        //eventmanager -> filtrado solo para [data-event-emitter]
+    </script>
+
+    <script type="module" src="./src/header.defered.js">
+        //Script que queremos que se descarguen pero no se evaluen hasta justo antes del DCLoaded
+        
+    </script>
+
+</head>
+
+<body>
+
+    <div>jajajajajaja</div>
+    <div ogt="pp">jajajajajaja</div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja <ul>
+            <li>
+                <h1>Prueba de carga</h1>
+            </li>
+            <li>
+                <h1>Prueba de carga</h1>
+            </li>
+            <li>
+                <h1>Prueba de carga</h1>
+            </li>
+        </ul>
+    </div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja</div>
+    <div>jajajajajaja</div>
+
+
+    <script type="module" src="./src/footer.module.js">
+        //todo lo demas, no tiene efecto ningun atributo!! O_=
+    </script>
+</body>
+
+</html>
